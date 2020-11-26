@@ -7,3 +7,8 @@ github:
   is_project_page: false
 plugins:
   - jekyll-sitemap
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/default-card.png
