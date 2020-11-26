@@ -1,0 +1,408 @@
+[
+	{
+		"date": "30.09.2020",
+		"activeCasesNI": 18,
+		"newCasesNI": 5,
+		"activeCasesKO": 161,
+		"sevenDaysIncidenceKO": 26.0
+	},
+	{
+		"date": "01.10.2020",
+		"activeCasesNI": 17,
+		"newCasesNI": 0,
+		"activeCasesKO": 166,
+		"sevenDaysIncidenceKO": 26.0
+	},
+	{
+		"date": "02.10.2020",
+		"activeCasesNI": 19,
+		"newCasesNI": 4,
+		"activeCasesKO": 176,
+		"sevenDaysIncidenceKO": 22.0
+	},
+	{
+		"date": "03.10.2020",
+		"activeCasesNI": 21,
+		"newCasesNI": 2,
+		"activeCasesKO": 180,
+		"sevenDaysIncidenceKO": 20.1
+	},
+	{
+		"date": "04.10.2020",
+		"activeCasesNI": 24,
+		"newCasesNI": 1,
+		"activeCasesKO": 179,
+		"sevenDaysIncidenceKO": 28.0
+	},
+	{
+		"date": "05.10.2020",
+		"activeCasesNI": 24,
+		"newCasesNI": 0,
+		"activeCasesKO": 181,
+		"sevenDaysIncidenceKO": 28.2
+	},
+	{
+		"date": "06.10.2020",
+		"activeCasesNI": 18,
+		"newCasesNI": 1,
+		"activeCasesKO": 172,
+		"sevenDaysIncidenceKO": 27.7
+	},
+	{
+		"date": "07.10.2020",
+		"activeCasesNI": 22,
+		"newCasesNI": 6,
+		"activeCasesKO": 179,
+		"sevenDaysIncidenceKO": 30.2
+	},
+	{
+		"date": "08.10.2020",
+		"activeCasesNI": 29,
+		"newCasesNI": 8,
+		"activeCasesKO": 193,
+		"sevenDaysIncidenceKO": 32.6
+	},
+	{
+		"date": "09.10.2020",
+		"activeCasesNI": 26,
+		"newCasesNI": 2,
+		"activeCasesKO": 210,
+		"sevenDaysIncidenceKO": null
+	},
+	{
+		"date": "10.10.2020",
+		"activeCasesNI": 28,
+		"newCasesNI": 3,
+		"activeCasesKO": 223,
+		"sevenDaysIncidenceKO": 39.6
+	},
+	{
+		"date": "11.10.2020",
+		"activeCasesNI": 32,
+		"newCasesNI": 5,
+		"activeCasesKO": 243,
+		"sevenDaysIncidenceKO": 41.9
+	},
+	{
+		"date": "12.10.2020",
+		"activeCasesNI": 33,
+		"newCasesNI": 1,
+		"activeCasesKO": 258,
+		"sevenDaysIncidenceKO": 40.5
+	},
+	{
+		"date": "13.10.2020",
+		"activeCasesNI": 32,
+		"newCasesNI": 1,
+		"activeCasesKO": 241,
+		"sevenDaysIncidenceKO": 45.5
+	},
+	{
+		"date": "14.10.2020",
+		"activeCasesNI": 30,
+		"newCasesNI": 3,
+		"activeCasesKO": 236,
+		"sevenDaysIncidenceKO": 43.0
+	},
+	{
+		"date": "15.10.2020",
+		"activeCasesNI": 36,
+		"newCasesNI": 6,
+		"activeCasesKO": 271,
+		"sevenDaysIncidenceKO": 48.1
+	},
+	{
+		"date": "16.10.2020",
+		"activeCasesNI": 41,
+		"newCasesNI": 6,
+		"activeCasesKO": 308,
+		"sevenDaysIncidenceKO": 49.2
+	},
+	{
+		"date": "17.10.2020",
+		"activeCasesNI": 47,
+		"newCasesNI": 5,
+		"activeCasesKO": 378,
+		"sevenDaysIncidenceKO": 61.3
+	},
+	{
+		"date": "18.10.2020",
+		"activeCasesNI": 51,
+		"newCasesNI": 4,
+		"activeCasesKO": 388,
+		"sevenDaysIncidenceKO": 59.0
+	},
+	{
+		"date": "19.10.2020",
+		"activeCasesNI": 53,
+		"newCasesNI": 4,
+		"activeCasesKO": 391,
+		"sevenDaysIncidenceKO": 60.4
+	},
+	{
+		"date": "20.10.2020",
+		"activeCasesNI": 54,
+		"newCasesNI": 2,
+		"activeCasesKO": 406,
+		"sevenDaysIncidenceKO": 65.8
+	},
+	{
+		"date": "21.10.2020",
+		"activeCasesNI": 60,
+		"newCasesNI": 9,
+		"activeCasesKO": 431,
+		"sevenDaysIncidenceKO": 73.9
+	},
+	{
+		"date": "22.10.2020",
+		"activeCasesNI": 65,
+		"newCasesNI": 7,
+		"activeCasesKO": 494,
+		"sevenDaysIncidenceKO": 79.5
+	},
+	{
+		"date": "23.10.2020",
+		"activeCasesNI": 65,
+		"newCasesNI": 5,
+		"activeCasesKO": 497,
+		"sevenDaysIncidenceKO": 83.5
+	},
+	{
+		"date": "24.10.2020",
+		"activeCasesNI": 72,
+		"newCasesNI": 10,
+		"activeCasesKO": 568,
+		"sevenDaysIncidenceKO": 83.3
+	},
+	{
+		"date": "25.10.2020",
+		"activeCasesNI": 75,
+		"newCasesNI": 3,
+		"activeCasesKO": 606,
+		"sevenDaysIncidenceKO": 91.9
+	},
+	{
+		"date": "26.10.2020",
+		"activeCasesNI": null,
+		"newCasesNI": 6,
+		"activeCasesKO": 606,
+		"sevenDaysIncidenceKO": 108.8
+	},
+	{
+		"date": "27.10.2020",
+		"activeCasesNI": 72,
+		"newCasesNI": 8,
+		"activeCasesKO": 583,
+		"sevenDaysIncidenceKO": 125.1
+	},
+	{
+		"date": "28.10.2020",
+		"activeCasesNI": 75,
+		"newCasesNI": 13,
+		"activeCasesKO": 630,
+		"sevenDaysIncidenceKO": 137.2
+	},
+	{
+		"date": "29.10.2020",
+		"activeCasesNI": 91,
+		"newCasesNI": 20,
+		"activeCasesKO": 725,
+		"sevenDaysIncidenceKO": 153.5
+	},
+	{
+		"date": "30.10.2020",
+		"activeCasesNI": 94,
+		"newCasesNI": 13,
+		"activeCasesKO": 820,
+		"sevenDaysIncidenceKO": 183.0
+	},
+	{
+		"date": "31.10.2020",
+		"activeCasesNI": 103,
+		"newCasesNI": 14,
+		"activeCasesKO": 906,
+		"sevenDaysIncidenceKO": 192.5
+	},
+	{
+		"date": "01.11.2020",
+		"activeCasesNI": 117,
+		"newCasesNI": 21,
+		"activeCasesKO": 978,
+		"sevenDaysIncidenceKO": 204.9
+	},
+	{
+		"date": "02.11.2020",
+		"activeCasesNI": 124,
+		"newCasesNI": 17,
+		"activeCasesKO": 1010,
+		"sevenDaysIncidenceKO": 214.2
+	},
+	{
+		"date": "03.11.2020",
+		"activeCasesNI": 133,
+		"newCasesNI": 12,
+		"activeCasesKO": 1066,
+		"sevenDaysIncidenceKO": 207.4
+	},
+	{
+		"date": "04.11.2020",
+		"activeCasesNI": 145,
+		"newCasesNI": 24,
+		"activeCasesKO": 1126,
+		"sevenDaysIncidenceKO": null
+	},
+	{
+		"date": "05.11.2020",
+		"activeCasesNI": 146,
+		"newCasesNI": 11,
+		"activeCasesKO": 1192,
+		"sevenDaysIncidenceKO": 218.6
+	},
+	{
+		"date": "06.11.2020",
+		"activeCasesNI": 158,
+		"newCasesNI": 19,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": null
+	},
+	{
+		"date": "07.11.2020",
+		"activeCasesNI": 175,
+		"newCasesNI": 23,
+		"activeCasesKO": 1349,
+		"sevenDaysIncidenceKO": 203.8
+	},
+	{
+		"date": "08.11.2020",
+		"activeCasesNI": 179,
+		"newCasesNI": 14,
+		"activeCasesKO": 1348,
+		"sevenDaysIncidenceKO": 218.1
+	},
+	{
+		"date": "09.11.2020",
+		"activeCasesNI": 192,
+		"newCasesNI": 15,
+		"activeCasesKO": 1394,
+		"sevenDaysIncidenceKO": 216.1
+	},
+	{
+		"date": "10.11.2020",
+		"activeCasesNI": 198,
+		"newCasesNI": 9,
+		"activeCasesKO": 1416,
+		"sevenDaysIncidenceKO": 212.8
+	},
+	{
+		"date": "11.11.2020",
+		"activeCasesNI": 206,
+		"newCasesNI": 14,
+		"activeCasesKO": 1488,
+		"sevenDaysIncidenceKO": 220.9
+	},
+	{
+		"date": "12.11.2020",
+		"activeCasesNI": 208,
+		"newCasesNI": 21,
+		"activeCasesKO": 1509,
+		"sevenDaysIncidenceKO": 233.8
+	},
+	{
+		"date": "13.11.2020",
+		"activeCasesNI": 213,
+		"newCasesNI": 14,
+		"activeCasesKO": 1576,
+		"sevenDaysIncidenceKO": null
+	},
+	{
+		"date": "14.11.2020",
+		"activeCasesNI": 206,
+		"newCasesNI": 18,
+		"activeCasesKO": 1596,
+		"sevenDaysIncidenceKO": null
+	},
+	{
+		"date": "15.11.2020",
+		"activeCasesNI": 205,
+		"newCasesNI": 12,
+		"activeCasesKO": 1581,
+		"sevenDaysIncidenceKO": 234.1
+	},
+	{
+		"date": "16.11.2020",
+		"activeCasesNI": 209,
+		"newCasesNI": 22,
+		"activeCasesKO": 1592,
+		"sevenDaysIncidenceKO": 253.5
+	},
+	{
+		"date": "17.11.2020",
+		"activeCasesNI": 204,
+		"newCasesNI": 7,
+		"activeCasesKO": 1609,
+		"sevenDaysIncidenceKO": 267.6
+	},
+	{
+		"date": "18.11.2020",
+		"activeCasesNI": 188,
+		"newCasesNI": 23,
+		"activeCasesKO": 1468,
+		"sevenDaysIncidenceKO": 256.6
+	},
+	{
+		"date": "19.11.2020",
+		"activeCasesNI": 191,
+		"newCasesNI": 13,
+		"activeCasesKO": 1542,
+		"sevenDaysIncidenceKO": 264.2
+	},
+	{
+		"date": "20.11.2020",
+		"activeCasesNI": 190,
+		"newCasesNI": 18,
+		"activeCasesKO": 1589,
+		"sevenDaysIncidenceKO": 272.1
+	},
+	{
+		"date": "21.11.2020",
+		"activeCasesNI": 189,
+		"newCasesNI": 18,
+		"activeCasesKO": 1543,
+		"sevenDaysIncidenceKO": 265.6
+	},
+	{
+		"date": "22.11.2020",
+		"activeCasesNI": 188,
+		"newCasesNI": 7,
+		"activeCasesKO": 1586,
+		"sevenDaysIncidenceKO": 253.8
+	},
+	{
+		"date": "23.11.2020",
+		"activeCasesNI": 193,
+		"newCasesNI": 11,
+		"activeCasesKO": 1573,
+		"sevenDaysIncidenceKO": 230.2
+	},
+	{
+		"date": "24.11.2020",
+		"activeCasesNI": 196,
+		"newCasesNI": 11,
+		"activeCasesKO": 1583,
+		"sevenDaysIncidenceKO": 218.7
+	},
+	{
+		"date": "25.11.2020",
+		"activeCasesNI": 195,
+		"newCasesNI": 14,
+		"activeCasesKO": 1518,
+		"sevenDaysIncidenceKO": 222.6
+	},
+	{
+		"date": "26.11.2020",
+		"activeCasesNI": 188,
+		"newCasesNI": 11,
+		"activeCasesKO": 1530,
+		"sevenDaysIncidenceKO": 208.8
+	}
+]
