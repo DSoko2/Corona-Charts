@@ -19,7 +19,7 @@ description: Interaktive Übersicht aktueller Daten zur Corona-Pandemie in Neu-I
 	<dd>Infektionen der letzten 7 Tage im Kreis Offenbach pro 100.000 Einwohner [1].</dd>
 </dl>
 
-[1] Entnommen aus den [Tagesmeldungen des Kreis Offenbach](https://www.kreis-offenbach.de/Themen/Gesundheit-Verbraucher-schutz/akut/Corona/Corona-Entwicklung/).
+[1] Entnommen aus den [Tagesmeldungen des Kreises Offenbach](https://www.kreis-offenbach.de/Themen/Gesundheit-Verbraucher-schutz/akut/Corona/Corona-Entwicklung/).
 
 ## Weitere Informationsquellen
 
