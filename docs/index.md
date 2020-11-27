@@ -6,6 +6,8 @@ description: Interaktive Übersicht aktueller Daten zur Corona-Pandemie in Neu-I
 
 <div id="chart"></div>
 
+<i style="display: block; text-align: center;">Datenpunkt berühren zur Detailansicht der Werte. Zoomen/Scrollen zur Einschränkung der Zeitachse.</i>
+
 ## Daten
 
 <dl>
