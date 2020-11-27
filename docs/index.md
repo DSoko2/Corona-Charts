@@ -32,7 +32,7 @@ description: Interaktive Übersicht aktueller Daten zur Corona-Pandemie in Neu-I
 
 <hr />
 
-Privat angeboten von [Daniel Sokolowski](https://dsoko.de). [Verbesserungen und Erweiterungen willkommen](https://github.com/DSoko2/Corona-NI#Contributing) als [Issue](https://github.com/DSoko2/Corona-NI/issues) oder [PR](https://github.com/DSoko2/Corona-NI/pulls). Nutzt [Github Pages](https://pages.github.com/), [Jekyll](https://jekyllrb.com/) und [C3.js](https://c3js.org).
+Privat angeboten von [Daniel Sokolowski](https://dsoko.de). [Verbesserungen und Erweiterungen willkommen](https://github.com/DSoko2/Corona-NI#Contributing) als [Issue](https://github.com/DSoko2/Corona-NI/issues) oder [PR](https://github.com/DSoko2/Corona-NI/pulls). Nutzt [Github Pages](https://pages.github.com/), [Jekyll](https://jekyllrb.com/) und [C3.js](https://c3js.org). [Impressum & Datenschutz](impressum-datenschutz.html).
 
 <!-- Load c3.css -->
 <link href="assets/c3.min.css" rel="stylesheet">
