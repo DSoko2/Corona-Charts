@@ -1,7 +1,8 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@import './fonts';
+@import "jekyll-theme-cayman";
 
 .main-content {
 	max-width: 78rem;
