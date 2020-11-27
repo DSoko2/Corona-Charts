@@ -19,13 +19,13 @@ description: Interaktive Übersicht aktueller Daten zur Corona-Pandemie in Neu-I
 	<dd>Infektionen der letzten 7 Tage im Kreis Offenbach pro 100.000 Einwohner [1].</dd>
 </dl>
 
-[1] Entnommen aus den [Tagesmeldungen des Kreis Offenbach](https://www.kreis-offenbach.de/Themen/Gesundheit-Verbraucher-schutz/akut/Corona/Corona-Entwicklung/).
+[1] Entnommen aus den [Tagesmeldungen des Kreises Offenbach](https://www.kreis-offenbach.de/Themen/Gesundheit-Verbraucher-schutz/akut/Corona/Corona-Entwicklung/).
 
 ## Weitere Informationsquellen
 
 * [Informationsseite zum Corona-Virus der Stadt Neu-Isenburg](https://neu-isenburg.de/buergerservice/rathauspresse/news-zum-corona-virus/)
 * [Corona-Hinweise der Stadt Neu-Isenburg](https://neu-isenburg.de/fileadmin/user_upload/Buergerservice/Rathauspresse/covid/201110_corona-regeln-N-I.pdf)
-* [Corona-Regeln des Kreis Offenbach](https://neu-isenburg.de/fileadmin/user_upload/Buergerservice/Rathauspresse/covid/201110_corona-regeln_KrOf.pdf)
+* [Corona-Regeln des Kreises Offenbach](https://neu-isenburg.de/fileadmin/user_upload/Buergerservice/Rathauspresse/covid/201110_corona-regeln_KrOf.pdf)
 * [Bundesweites Corona Dashboard des RKI](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
 
 <hr />
