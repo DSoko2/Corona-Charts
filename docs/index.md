@@ -6,7 +6,7 @@ description: Interaktive Übersicht aktueller Daten zur Corona-Pandemie in Neu-I
 
 <div id="chart"></div>
 
-<i style="display: block; text-align: center;">Datenpunkt berühren zur Detailansicht der Werte. Zoomen/Scrollen zur Einschränkung der Zeitachse.</i>
+<i style="display: block; text-align: center;" aria-hidden="true">Datenpunkt berühren zur Detailansicht der Werte. Zoomen/Scrollen zur Einschränkung der Zeitachse.</i>
 
 ## Daten
 
@@ -111,5 +111,46 @@ Privat angeboten von [Daniel Sokolowski](https://dsoko.de). [Verbesserungen und 
 		chart.load({
 			columns: [date, activeCases, newCasesNI, sevenDaysIncidenceNI, sevenDaysIncidenceKO]
 		});
+
+		// Screen reader accessibility
+		const dataPointEventTarget = document.querySelector('.c3-event-rect');
+		const chartSvg = document.querySelector('#chart > svg');
+		const chartDataPoints = Array.from(document.querySelectorAll('#chart .c3-axis.c3-axis-x .tick'));
+		const chartIrrelevantAccessibilityTreeNodes = Array.from(document.querySelectorAll('#chart > svg > * > :not(.c3-axis-x), #chart > svg > * > :not(.c3-axis), #chart > svg > * > .c3-axis-x.c3-axis > :not(.tick)'));
+		const chartTooltip = document.querySelector('#chart .c3-tooltip-container');
+
+		chartSvg.setAttribute('role', 'graphics-document document');
+		chartSvg.setAttribute('aria-label', 'Diagramm täglicher Daten zu Corona in Neu-Isenburg');
+		chartIrrelevantAccessibilityTreeNodes.forEach(node => node.setAttribute('aria-hidden', 'true'));
+		chartTooltip.setAttribute('id', 'chart-tooltip');
+		chartTooltip.setAttribute('aria-hidden', 'true');
+
+		chartDataPoints.forEach((node, index) => {
+				node.setAttribute('tabindex', 0);
+				node.setAttribute('role', 'graphics-symbol img');
+				node.setAttribute('aria-describedby', 'chart-tooltip');
+				node.addEventListener('focus', d => {
+					const tickClientRect = d.target.getBoundingClientRect();
+					const mouseMoveEvent = document.createEvent("MouseEvents");
+					mouseMoveEvent.initMouseEvent(
+						"mousemove", //event type : click, mousedown, mouseup, mouseover, mousemove, mouseout.  
+						true, //canBubble
+						false, //cancelable
+						window, //event's AbstractView : should be window 
+						1, // detail : Event's mouse click count 
+						window.screenX + tickClientRect.left + tickClientRect.width / 2, // screenX
+						window.screenY + tickClientRect.top - 20, // screenY
+						tickClientRect.left + tickClientRect.width / 2, // clientX
+						tickClientRect.top - 20, // clientY
+						false, // ctrlKey
+						false, // altKey
+						false, // shiftKey
+						false, // metaKey 
+						0, // button : 0 = click, 1 = middle button, 2 = right button  
+						null // relatedTarget : Only used with some event types (e.g. mouseover and mouseout). In other cases, pass null.
+					);
+					dataPointEventTarget.dispatchEvent(mouseMoveEvent);
+				});
+			});
 	}
 </script>
