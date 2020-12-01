@@ -1,6 +1,6 @@
 # Corona Chart Neu-Isenburg
 
-Visualization of Corona related data for Neu-Isenburg. Privately maintained by [Daniel Sokolowski](https://dsoko.de).
+Visualization of Corona related data for Neu-Isenburg. Privately maintained by [Daniel Sokolowski](https://dsoko.de). Available at [https://corona-ni.dsoko.de](https://corona-ni.dsoko.de).
 
 ## Contributing
 
