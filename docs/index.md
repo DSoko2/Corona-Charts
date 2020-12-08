@@ -26,7 +26,7 @@ description: Interaktive Übersicht aktueller Daten zur Corona-Pandemie in Neu-I
 ## Weitere Informationsquellen
 
 * [Informationsseite zum Corona-Virus der Stadt Neu-Isenburg](https://neu-isenburg.de/buergerservice/rathauspresse/news-zum-corona-virus/)
-* [Corona-Hinweise der Stadt Neu-Isenburg](https://neu-isenburg.de/fileadmin/user_upload/Buergerservice/Rathauspresse/covid/201110_corona-regeln-N-I.pdf)
+* [Corona-Regeln der Stadt Neu-Isenburg](https://neu-isenburg.de/fileadmin/user_upload/Buergerservice/Rathauspresse/covid/201207_corona-regeln-N-I.pdf)
 * [Corona-Regeln des Kreises Offenbach](https://neu-isenburg.de/fileadmin/user_upload/Buergerservice/Rathauspresse/covid/201201_corona-regeln_KrOf.pdf)
 * [Bundesweites Corona Dashboard des RKI](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
 
