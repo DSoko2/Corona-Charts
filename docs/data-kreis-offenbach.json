@@ -572,5 +572,12 @@
 		"newCasesNI": 9,
 		"activeCasesKO": 1595,
 		"sevenDaysIncidenceKO": 216.1
+	},
+	{
+		"date": "21.12.2020",
+		"activeCasesNI": 155,
+		"newCasesNI": 10,
+		"activeCasesKO": 1613,
+		"sevenDaysIncidenceKO": 218.1
 	}
 ]
