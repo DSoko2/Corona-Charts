@@ -4,7 +4,7 @@ title: Corona Chart Neu-Isenburg
 description: Interaktive Übersicht aktueller Daten zur Corona-Pandemie in Neu-Isenburg.
 ---
 
-Laut RKI können die Corona-Meldedaten an sowie um Weihnachten und den Jahreswechsel ungenauer und zu gering sein. Dies sei mit weniger Probenentnahmen und Laboruntersuchungen sowie teilweise verzögerter Ergebnisübermittlung zu erklären.
+<!--Laut RKI können die Corona-Meldedaten an sowie um Weihnachten und den Jahreswechsel ungenauer und zu gering sein. Dies sei mit weniger Probenentnahmen und Laboruntersuchungen sowie teilweise verzögerter Ergebnisübermittlung zu erklären.-->
 
 <div id="chart"></div>
 
