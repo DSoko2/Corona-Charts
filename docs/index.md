@@ -63,7 +63,7 @@ Privat angeboten von [Daniel Sokolowski](https://dsoko.de). [Verbesserungen und 
 	    },
 	    data: {
 	    	x: 'date',
-	    	xFormat: '%d\.%m\.%Y',
+	    	xFormat: '%d.%m.%Y',
 	    	columns: [],
 	    	axes: {
 	    		'Neue Fälle': 'y2'
@@ -84,7 +84,7 @@ Privat angeboten von [Daniel Sokolowski](https://dsoko.de). [Verbesserungen und 
 	            type: 'timeseries',
 	            tick: {
 	                format: '%d.%m.%y',
-                    fit:true,
+                    fit: true,
                     culling: {
                         max: window.innerWidth > 500 ? 8 : 5
                     }
@@ -96,6 +96,11 @@ Privat angeboten von [Daniel Sokolowski](https://dsoko.de). [Verbesserungen und 
    		},
 	    subchart: {
 	        show: true
+	    },
+	    tooltip: {
+	    	format: {
+	    		title: function (d) { return d.toLocaleDateString('de-DE', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }); }
+	    	}
 	    },
 	    zoom: {
 	        enabled: true
@@ -125,7 +130,9 @@ Privat angeboten von [Daniel Sokolowski](https://dsoko.de). [Verbesserungen und 
 			.map(v => v === null ? null : Number(100000.0 * v / population).toFixed(1)));
 
 		// Print current data
-		document.getElementById('current-date').innerText = date.slice(-1)[0];
+		const currentExploded = date.slice(-1)[0].split('.')
+		document.getElementById('current-date').innerText = new Date(currentExploded[2], currentExploded[1]-1, currentExploded[0])
+			.toLocaleDateString('de-DE', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
 		function setDataChange(element, current, before) {
 			const change = current - before;
 			element.innerText = (change < 0 ? '' : '+') + Math.round(change, 2);
