@@ -10,16 +10,29 @@ description: Interaktive Übersicht aktueller Daten zur Corona-Pandemie in Neu-I
 
 <i style="display: block; text-align: center;" aria-hidden="true">Datenpunkt berühren zur Detailansicht der Werte. Zoomen/Scrollen zur Einschränkung der Zeitachse.</i>
 
-## Daten
+## Aktuell (<span id="current-date"></span>)
+
+<dl>
+	<dt>Aktive Fälle</dt>
+	<dd><span id="current-cases"></span> (<span id="day-change-cases"></span> Vortag, <span id="week-change-cases"></span> Vorwoche)</dd>
+	<dt>Neue Fälle</dt>
+	<dd><span id="current-new-cases"></span> (<span id="day-change-new-cases"></span> Vortag, <span id="week-change-new-cases"></span> Vorwoche)</dd>
+	<dt>7-Tage-Inzidenz</dt>
+	<dd><span id="current-7-days-incidence"></span> (<span id="day-change-7-days-incidence"></span> Vortag, <span id="week-change-7-days-incidence"></span> Vorwoche)</dd>
+	<dt>7-Tage-Inzidenz Kreis</dt>
+	<dd><span id="current-7-days-incidence-KO"></span> (<span id="day-change-7-days-incidence-KO"></span> Vortag, <span id="week-change-7-days-incidence-KO"></span> Vorwoche)</dd>
+</dl>
+
+## Legende
 
 <dl>
 	<dt>Aktive Fälle</dt>
 	<dd>Positiv getestete Personen der letzten 14 Tage in Neu-Isenburg [1]. Vor dem 18.11. Anzahl der aktuell positiv Getesteten in Neu-Isenburg.</dd>
 	<dt>Neue Fälle</dt>
 	<dd>Neu positiv getestete Personen in Neu-Isenburg [1].</dd>
-	<dt>7-Tage Inzidenz</dt>
+	<dt>7-Tage-Inzidenz</dt>
 	<dd>Infektionen der letzten 7 Tage in Neu-Isenburg pro 100.000 Einwohner. Errechnet aus "Neue Fälle" unter Annahme von 38.105 Einwohnern.</dd>
-	<dt>7-Tage Inzidenz Kreis</dt>
+	<dt>7-Tage-Inzidenz Kreis</dt>
 	<dd>Infektionen der letzten 7 Tage im Kreis Offenbach pro 100.000 Einwohner [1].</dd>
 </dl>
 
@@ -62,8 +75,8 @@ Privat angeboten von [Daniel Sokolowski](https://dsoko.de). [Verbesserungen und 
 		    	// https://learnui.design/tools/data-color-picker.html#palette
 		    	'Neue Fälle': '#FDA',
 		    	'Aktive Fälle': '#ffa600',
-		    	'7-Tage Inzidenz': '#bc5090',
-		    	'7-Tage Inzidenz Kreis': '#003f5c',
+		    	'7-Tage-Inzidenz': '#bc5090',
+		    	'7-Tage-Inzidenz Kreis': '#003f5c',
 			},
 	    },
 	    axis: {
@@ -96,20 +109,39 @@ Privat angeboten von [Daniel Sokolowski](https://dsoko.de). [Verbesserungen und 
 	request.responseType = 'json';
 	request.send();
 	request.onload = function() {
+		// Prepare data
 		const data = request.response;
 		const date = ['date'].concat(data.map(v => v['date']));
 		const activeCases = ['Aktive Fälle'].concat(data.map(v => v['activeCasesNI']));
 		const newCasesNI = ['Neue Fälle'].concat(data.map(v => v['newCasesNI']));
-		const sevenDaysIncidenceKO = ['7-Tage Inzidenz Kreis'].concat(data.map(v => v['sevenDaysIncidenceKO']));
+		const sevenDaysIncidenceKO = ['7-Tage-Inzidenz Kreis'].concat(data.map(v => v['sevenDaysIncidenceKO']));
 		const activeCasesKO = ['Aktive Fälle Kreis'].concat(data.map(v => v['activeCasesKO']));
 
 		const sevenDaysInfectionsNI = ['7-Tage Infektionen', null, null, null, null, null, null].concat(
 			[...Array(Math.max(0, newCasesNI.length - 6)).keys()]
 				.map(firstDay => newCasesNI.slice(firstDay+1,firstDay+8)
 				.reduce((sum, summand) => sum + summand, 0)));
-		const sevenDaysIncidenceNI = ['7-Tage Inzidenz'].concat(sevenDaysInfectionsNI.slice(1)
+		const sevenDaysIncidenceNI = ['7-Tage-Inzidenz'].concat(sevenDaysInfectionsNI.slice(1)
 			.map(v => v === null ? null : Number(100000.0 * v / population).toFixed(1)));
 
+		// Print current data
+		document.getElementById('current-date').innerText = date.slice(-1)[0];
+		function setDataChange(element, current, before) {
+			const change = current - before;
+			element.innerText = (change < 0 ? '' : '+') + Math.round(change, 2);
+			element.classList.add(change <= 0 ? 'better' : 'worse');
+		}
+		function setCurrentData(field, current, dayEarlier, weekEarlier) {
+			document.getElementById('current-' + field).innerText = current;
+			setDataChange(document.getElementById('day-change-' + field), current, dayEarlier);
+			setDataChange(document.getElementById('week-change-' + field), current, weekEarlier);
+		}
+		setCurrentData('cases', activeCases.slice(-1)[0], activeCases.slice(-2)[0], activeCases.slice(-8)[0]);
+		setCurrentData('new-cases', newCasesNI.slice(-1)[0], newCasesNI.slice(-2)[0], newCasesNI.slice(-8)[0]);
+		setCurrentData('7-days-incidence', sevenDaysIncidenceNI.slice(-1)[0], sevenDaysIncidenceNI.slice(-2)[0], sevenDaysIncidenceNI.slice(-8)[0]);
+		setCurrentData('7-days-incidence-KO', sevenDaysIncidenceKO.slice(-1)[0], sevenDaysIncidenceKO.slice(-2)[0], sevenDaysIncidenceKO.slice(-8)[0]);
+
+		// Draw chart
 		chart.load({
 			columns: [date, activeCases, newCasesNI, sevenDaysIncidenceNI, sevenDaysIncidenceKO]
 		});

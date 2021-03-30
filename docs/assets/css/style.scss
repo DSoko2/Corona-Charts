@@ -7,3 +7,32 @@
 .main-content {
 	max-width: 78rem;
 }
+
+.worse {
+	color: #991557;
+}
+.better {
+	color: #159957;
+}
+
+dl {
+	margin: 0 0 0 2em;
+}
+dt {
+	display: inline;
+	margin: 0 0 0 -2em;
+}
+dt::after {
+    content: ': ';
+}
+dd {
+	display: inline;
+	margin: 0;
+}
+dd::after {
+    content: '\A\A';
+    white-space: pre-line;
+}
+dd:last-of-type::after {
+    content: '';
+}
