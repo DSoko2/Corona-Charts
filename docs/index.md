@@ -123,7 +123,7 @@ Privat angeboten von [Daniel Sokolowski](https://dsoko.de). [Verbesserungen und 
 		const activeCasesKO = ['Aktive Fälle Kreis'].concat(data.map(v => v['activeCasesKO']));
 
 		const sevenDaysInfectionsNI = ['7-Tage Infektionen', null, null, null, null, null, null].concat(
-			[...Array(Math.max(0, newCasesNI.length - 6)).keys()]
+			[...Array(Math.max(0, newCasesNI.length - 7)).keys()]
 				.map(firstDay => newCasesNI.slice(firstDay+1,firstDay+8)
 				.reduce((sum, summand) => sum + summand, 0)));
 		const sevenDaysIncidenceNI = ['7-Tage-Inzidenz'].concat(sevenDaysInfectionsNI.slice(1)
