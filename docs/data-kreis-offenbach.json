@@ -1825,5 +1825,12 @@
 		"newCasesNI": 0,
 		"activeCasesKO": 110,
 		"sevenDaysIncidenceKO": 12.6
+	},
+	{
+		"date": "18.06.2021",
+		"activeCasesNI": 16,
+		"newCasesNI": 0,
+		"activeCasesKO": 94,
+		"sevenDaysIncidenceKO": 8.7
 	}
 ]
