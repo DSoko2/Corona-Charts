@@ -90,7 +90,13 @@ Privat angeboten von [Daniel Sokolowski](https://dsoko.de). [Verbesserungen und 
                     }
 	            }
 		    },
+            y: {
+                min: 0,
+                padding: { top: 20, bottom: 0 }
+            },
 	        y2: {
+                min: 0,
+                padding: { top: 20, bottom: 0 },
 	            show: true
 	        }
    		},
