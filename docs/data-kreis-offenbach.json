@@ -1930,5 +1930,26 @@
 		"newCasesNI": 1,
 		"activeCasesKO": 56,
 		"sevenDaysIncidenceKO": 7.6
+	},
+	{
+		"date": "03.07.2021",
+		"activeCasesNI": 3,
+		"newCasesNI": 1,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": 8.2
+	},
+	{
+		"date": "04.07.2021",
+		"activeCasesNI": 4,
+		"newCasesNI": 1,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": 7.9
+	},
+	{
+		"date": "05.07.2021",
+		"activeCasesNI": 4,
+		"newCasesNI": 0,
+		"activeCasesKO": 55,
+		"sevenDaysIncidenceKO": 8.2
 	}
 ]
