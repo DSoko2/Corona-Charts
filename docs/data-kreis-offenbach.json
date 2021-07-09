@@ -1965,5 +1965,12 @@
 		"newCasesNI": 0,
 		"activeCasesKO": 59,
 		"sevenDaysIncidenceKO": 7.6
+	},
+	{
+		"date": "08.07.2021",
+		"activeCasesNI": 4,
+		"newCasesNI": 0,
+		"activeCasesKO": 59,
+		"sevenDaysIncidenceKO": 6.2
 	}
 ]
