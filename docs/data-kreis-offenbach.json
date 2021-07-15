@@ -2014,5 +2014,12 @@
 		"newCasesNI": 1,
 		"activeCasesKO": 75,
 		"sevenDaysIncidenceKO": 13.5
+	},
+	{
+		"date": "15.07.2021",
+		"activeCasesNI": 9,
+		"newCasesNI": 0,
+		"activeCasesKO": 71,
+		"sevenDaysIncidenceKO": 12.4
 	}
 ]
