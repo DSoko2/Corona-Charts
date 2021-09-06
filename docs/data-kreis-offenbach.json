@@ -2371,5 +2371,26 @@
 		"newCasesNI": 9,
 		"activeCasesKO": 704,
 		"sevenDaysIncidenceKO": 118.9
+	},
+	{
+		"date": "04.09.2021",
+		"activeCasesNI": 129,
+		"newCasesNI": 16,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": 130.7
+	},
+	{
+		"date": "05.09.2021",
+		"activeCasesNI": 141,
+		"newCasesNI": 23,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": 146.7
+	},
+	{
+		"date": "06.09.2021",
+		"activeCasesNI": 141,
+		"newCasesNI": 0,
+		"activeCasesKO": 843,
+		"sevenDaysIncidenceKO": 147.5
 	}
 ]
