@@ -2406,5 +2406,12 @@
 		"newCasesNI": 12,
 		"activeCasesKO": 902,
 		"sevenDaysIncidenceKO": 144.4
+	},
+	{
+		"date": "09.09.2021",
+		"activeCasesNI": 155,
+		"newCasesNI": 21,
+		"activeCasesKO": 946,
+		"sevenDaysIncidenceKO": 142.6
 	}
 ]
