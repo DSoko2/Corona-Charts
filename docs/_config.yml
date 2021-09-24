@@ -1,15 +1,10 @@
 theme: jekyll-theme-cayman
 title: Corona Chart Neu-Isenburg
 description: Interaktive Übersicht aktueller Daten zur Corona-Pandemie in Neu-Isenburg.
-url: "https://corona-ni.dsoko.de"
+url: "https://corona.dsoko.de"
 show_downloads: false
 github:
   is_project_page: false
 plugins:
   - jekyll-sitemap
 lang: de
-defaults:
-  - scope:
-      path: ""
-    values:
-      image: /assets/default-card.png

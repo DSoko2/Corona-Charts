@@ -3,6 +3,7 @@ layout: default
 title: Corona Chart Neu-Isenburg
 description: Interaktive Übersicht aktueller Daten zur Corona-Pandemie in Neu-Isenburg.
 permalink: neu-isenburg
+image: /assets/neu-isenburg-card.png
 ---
 
 <div id="chart"></div>
