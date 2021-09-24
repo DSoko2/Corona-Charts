@@ -6,9 +6,7 @@ permalink: neu-isenburg
 image: /assets/neu-isenburg-card.png
 ---
 
-<div id="chart"></div>
-
-<i style="display: block; text-align: center;" aria-hidden="true">Datenpunkt berühren zur Detailansicht der Werte. Zoomen/Scrollen zur Einschränkung der Zeitachse.</i>
+{% include chart.html chartId="chart" %}
 
 ## Aktuell (<span id="current-date"></span>)
 
@@ -43,16 +41,9 @@ image: /assets/neu-isenburg-card.png
 * [Informationsseite zum Corona-Virus der Stadt Neu-Isenburg](https://neu-isenburg.de/buergerservice/rathauspresse/news-zum-corona-virus/)
 * [Informationen des Kreises Offenbach](https://www.kreis-offenbach.de/Themen/Gesundheit-Verbraucher-schutz/akut/Corona/)
 
-<hr />
+{% include footer.html %}
+{% include load-c3.html %}
 
-Privat angeboten von [Daniel Sokolowski](https://dsoko.de). [Verbesserungen und Erweiterungen willkommen](https://github.com/DSoko2/Corona-NI#Contributing) als [Issue](https://github.com/DSoko2/Corona-NI/issues) oder [PR](https://github.com/DSoko2/Corona-NI/pulls). Nutzt [Github Pages](https://pages.github.com/), [Jekyll](https://jekyllrb.com/) und [C3.js](https://c3js.org). [Impressum & Datenschutz](impressum-datenschutz.html).
-
-<!-- Load c3.css -->
-<link href="assets/c3.min.css" rel="stylesheet">
-
-<!-- Load d3.js and c3.js -->
-<script src="assets/d3.min.js" charset="utf-8"></script>
-<script src="assets/c3.min.js"></script>
 <script type="text/javascript">
 	const chart = c3.generate({
 	    bindto: '#chart',
@@ -142,60 +133,24 @@ Privat angeboten von [Daniel Sokolowski](https://dsoko.de). [Verbesserungen und 
 			element.innerText = (change < 0 ? '' : '+') + Math.round(change, 2);
 			element.classList.add(change <= 0 ? 'better' : 'worse');
 		}
-		function setCurrentData(field, current, dayEarlier, weekEarlier) {
+		function setCurrentData(field, data) {
+            const current = data.slice(-1)[0];
+            const dayEarlier = data.slice(-2)[0];
+            const weekEarlier = data.slice(-8)[0];
 			document.getElementById('current-' + field).innerText = current;
 			setDataChange(document.getElementById('day-change-' + field), current, dayEarlier);
 			setDataChange(document.getElementById('week-change-' + field), current, weekEarlier);
 		}
-		setCurrentData('cases', activeCases.slice(-1)[0], activeCases.slice(-2)[0], activeCases.slice(-8)[0]);
-		setCurrentData('new-cases', newCasesNI.slice(-1)[0], newCasesNI.slice(-2)[0], newCasesNI.slice(-8)[0]);
-		setCurrentData('7-days-incidence', sevenDaysIncidenceNI.slice(-1)[0], sevenDaysIncidenceNI.slice(-2)[0], sevenDaysIncidenceNI.slice(-8)[0]);
-		setCurrentData('7-days-incidence-KO', sevenDaysIncidenceKO.slice(-1)[0], sevenDaysIncidenceKO.slice(-2)[0], sevenDaysIncidenceKO.slice(-8)[0]);
+		setCurrentData('cases', activeCases);
+		setCurrentData('new-cases', newCasesNI);
+		setCurrentData('7-days-incidence', sevenDaysIncidenceNI);
+		setCurrentData('7-days-incidence-KO', sevenDaysIncidenceKO);
 
 		// Draw chart
 		chart.load({
 			columns: [date, activeCases, newCasesNI, sevenDaysIncidenceNI, sevenDaysIncidenceKO]
 		});
-
-		// Screen reader accessibility
-		const dataPointEventTarget = document.querySelector('.c3-event-rect');
-		const chartSvg = document.querySelector('#chart > svg');
-		const chartDataPoints = Array.from(document.querySelectorAll('#chart .c3-axis.c3-axis-x .tick'));
-		const chartIrrelevantAccessibilityTreeNodes = Array.from(document.querySelectorAll('#chart > svg > * > :not(.c3-axis-x), #chart > svg > * > :not(.c3-axis), #chart > svg > * > .c3-axis-x.c3-axis > :not(.tick)'));
-		const chartTooltip = document.querySelector('#chart .c3-tooltip-container');
-
-		chartSvg.setAttribute('role', 'graphics-document document');
-		chartSvg.setAttribute('aria-label', 'Diagramm täglicher Daten zu Corona in Neu-Isenburg');
-		chartIrrelevantAccessibilityTreeNodes.forEach(node => node.setAttribute('aria-hidden', 'true'));
-		chartTooltip.setAttribute('id', 'chart-tooltip');
-		chartTooltip.setAttribute('aria-hidden', 'true');
-
-		chartDataPoints.forEach((node, index) => {
-				node.setAttribute('tabindex', 0);
-				node.setAttribute('role', 'graphics-symbol img');
-				node.setAttribute('aria-describedby', 'chart-tooltip');
-				node.addEventListener('focus', d => {
-					const tickClientRect = d.target.getBoundingClientRect();
-					const mouseMoveEvent = document.createEvent("MouseEvents");
-					mouseMoveEvent.initMouseEvent(
-						"mousemove", //event type : click, mousedown, mouseup, mouseover, mousemove, mouseout.  
-						true, //canBubble
-						false, //cancelable
-						window, //event's AbstractView : should be window 
-						1, // detail : Event's mouse click count 
-						window.screenX + tickClientRect.left + tickClientRect.width / 2, // screenX
-						window.screenY + tickClientRect.top - 20, // screenY
-						tickClientRect.left + tickClientRect.width / 2, // clientX
-						tickClientRect.top - 20, // clientY
-						false, // ctrlKey
-						false, // altKey
-						false, // shiftKey
-						false, // metaKey 
-						0, // button : 0 = click, 1 = middle button, 2 = right button  
-						null // relatedTarget : Only used with some event types (e.g. mouseover and mouseout). In other cases, pass null.
-					);
-					dataPointEventTarget.dispatchEvent(mouseMoveEvent);
-				});
-			});
+        
+        {% include reader.js chartId="chart" description="Diagramm täglicher Daten zu Corona in Neu-Isenburg" %}
 	}
 </script>
