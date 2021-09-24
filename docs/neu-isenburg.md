@@ -2,9 +2,8 @@
 layout: default
 title: Corona Chart Neu-Isenburg
 description: Interaktive Übersicht aktueller Daten zur Corona-Pandemie in Neu-Isenburg.
+permalink: neu-isenburg
 ---
-
-<!--Laut RKI können die Corona-Meldedaten an sowie um Weihnachten und den Jahreswechsel ungenauer und zu gering sein. Dies sei mit weniger Probenentnahmen und Laboruntersuchungen sowie teilweise verzögerter Ergebnisübermittlung zu erklären.-->
 
 <div id="chart"></div>
 
@@ -42,8 +41,6 @@ description: Interaktive Übersicht aktueller Daten zur Corona-Pandemie in Neu-I
 
 * [Informationsseite zum Corona-Virus der Stadt Neu-Isenburg](https://neu-isenburg.de/buergerservice/rathauspresse/news-zum-corona-virus/)
 * [Informationen des Kreises Offenbach](https://www.kreis-offenbach.de/Themen/Gesundheit-Verbraucher-schutz/akut/Corona/)
-* [Tägliches Bulletin des Landes Hessen mit Hospitalisierungswerten](https://soziales.hessen.de/gesundheit/corona-in-hessen/taegliche-uebersicht-ueber-die-indikatoren-zur-pandemiebestimmung)
-* [Bundesweites Corona Dashboard des RKI](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
 
 <hr />
 
