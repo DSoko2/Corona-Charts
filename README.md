@@ -1,10 +1,10 @@
-# Corona Chart Neu-Isenburg
+# Corona Charts
 
-Visualization of Corona related data for Neu-Isenburg. Privately maintained by [Daniel Sokolowski](https://dsoko.de). Available at [https://corona-ni.dsoko.de](https://corona-ni.dsoko.de).
+Visualization of Corona related data for Hessen and Neu-Isenburg. Privately maintained by [Daniel Sokolowski](https://dsoko.de). Available at [https://corona.dsoko.de](https://corona.dsoko.de).
 
 ## Contributing
 
-Ideas, corrections, extensions and data updates are very welcome. Please just open a corresponding [issue](https://github.com/DSoko2/Corona-NI/issues) or directly file a [pull request](https://github.com/DSoko2/Corona-NI/pulls) with the changes. I will make sure to reply and act as soon as possible.
+Ideas, corrections, extensions and data updates are very welcome. Please just open a corresponding [issue](https://github.com/DSoko2/Corona-Charts/issues) or directly file a [pull request](https://github.com/DSoko2/Corona-Charts/pulls) with the changes. I will make sure to reply and act as soon as possible.
 
 ## What's about reuse?
 
