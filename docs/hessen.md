@@ -288,30 +288,30 @@ Es sind zwei Eskalationsstufen definiert, deren Erreichung anhand <a href="https
 		const currentExploded = date.slice(-1)[0].split('.')
 		document.getElementById('current-date').innerText = new Date(currentExploded[2], currentExploded[1]-1, currentExploded[0])
 			.toLocaleDateString('de-DE', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-		function setDataChange(element, current, before, format) {
+		function setDataChange(element, current, before, format, invertedPositive) {
 			const change = current - before;
 			element.innerText = (change < 0 ? '' : '+') + format(change);
-			element.classList.add(change <= 0 ? 'better' : 'worse');
+			element.classList.add(change <= 0 && invertedPositive || change >= 0 && !invertedPositive ? 'better' : 'worse');
 		}
-		function setCurrentData(field, data, format) {
+		function setCurrentData(field, data, format, invertedPositive = true) {
             const current = data.slice(-1)[0];
             const dayEarlier = data.slice(-2)[0];
             const weekEarlier = data.slice(-8)[0];
 			document.getElementById('current-' + field).innerText = format(current);
-			setDataChange(document.getElementById('day-change-' + field), current, dayEarlier, format);
-			setDataChange(document.getElementById('week-change-' + field), current, weekEarlier, format);
+			setDataChange(document.getElementById('day-change-' + field), current, dayEarlier, format, invertedPositive);
+			setDataChange(document.getElementById('week-change-' + field), current, weekEarlier, format, invertedPositive);
 		}
 		setCurrentData('hospitalisierungsinzidenz', hospitalisierung, t => Number(t).toFixed(2));
 		setCurrentData('intensivbetten', intensivbetten, t => Math.round(t));
 		setCurrentData('intensivbetten-confirmed', intensivbettenConfirmed, t => Math.round(t));
 		setCurrentData('intensivbetten-suspicion', intensivbettenSuspicion, t => Math.round(t));
-		setCurrentData('intensivbetten-immunized', intensivbettenImmunizedRatio, t => Number(t * 100).toFixed(1) + '%');
-		setCurrentData('intensivbetten-not-immunized', intensivbettenNotImmunizedRatio, t => Number(t * 100).toFixed(1) + '%');
+		setCurrentData('intensivbetten-immunized', intensivbettenImmunizedRatio, t => Number(t * 100).toFixed(1) + '%', false);
+		setCurrentData('intensivbetten-not-immunized', intensivbettenNotImmunizedRatio, t => Number(t * 100).toFixed(1) + '%', false);
 		setCurrentData('normalbetten', normalbetten, t => Math.round(t));
 		setCurrentData('normalbetten-confirmed', normalbettenConfirmed, t => Math.round(t));
 		setCurrentData('normalbetten-suspicion', normalbettenSuspicion, t => Math.round(t));
-		setCurrentData('immunized', immunizedRatio, t => Number(t * 100).toFixed(1) + '%');
-		setCurrentData('immunized-approved', immunizedRatioApproved, t => Number(t * 100).toFixed(1) + '%');
+		setCurrentData('immunized', immunizedRatio, t => Number(t * 100).toFixed(1) + '%', false);
+		setCurrentData('immunized-approved', immunizedRatioApproved, t => Number(t * 100).toFixed(1) + '%', false);
 
 		// Draw charts
 		leitindikatorenChart.load({
