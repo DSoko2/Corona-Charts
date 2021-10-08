@@ -226,5 +226,41 @@
     "intensivbettenImmunizedRatio": 0.17,
     "immunizedRatio": 0.639,
     "immunizedRatioApproved": 0.721
+  },
+  {
+    "date": "06.10.2021",
+    "hospitalisierung": 2.24,
+    "intensivbettenConfirmed": 108,
+    "intensivbettenSuspicion": 9,
+    "normalbettenConfirmed": 231,
+    "normalbettenSuspicion": 68,
+    "intensivbettenNotImmunizedRatio": 0.78,
+    "intensivbettenImmunizedRatio": 0.16,
+    "immunizedRatio": 0.64,
+    "immunizedRatioApproved": 0.722
+  },
+  {
+    "date": "07.10.2021",
+    "hospitalisierung": 1.95,
+    "intensivbettenConfirmed": 105,
+    "intensivbettenSuspicion": 9,
+    "normalbettenConfirmed": 219,
+    "normalbettenSuspicion": 64,
+    "intensivbettenNotImmunizedRatio": 0.78,
+    "intensivbettenImmunizedRatio": 0.16,
+    "immunizedRatio": 0.64,
+    "immunizedRatioApproved": 0.722
+  },
+  {
+    "date": "08.10.2021",
+    "hospitalisierung": 1.86,
+    "intensivbettenConfirmed": 114,
+    "intensivbettenSuspicion": 11,
+    "normalbettenConfirmed": 217,
+    "normalbettenSuspicion": 72,
+    "intensivbettenNotImmunizedRatio": 0.72,
+    "intensivbettenImmunizedRatio": 0.19,
+    "immunizedRatio": 0.643,
+    "immunizedRatioApproved": 0.725
   }
 ]
