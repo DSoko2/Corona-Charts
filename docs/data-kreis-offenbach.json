@@ -2644,5 +2644,19 @@
 		"newCasesNI": 2,
 		"activeCasesKO": 499,
 		"sevenDaysIncidenceKO": 67.6
+	},
+	{
+		"date": "13.10.2021",
+		"activeCasesNI": 61,
+		"newCasesNI": 4,
+		"activeCasesKO": 458,
+		"sevenDaysIncidenceKO": 63.7
+	},
+	{
+		"date": "14.10.2021",
+		"activeCasesNI": 61,
+		"newCasesNI": 2,
+		"activeCasesKO": 460,
+		"sevenDaysIncidenceKO": 62.3
 	}
 ]
