@@ -394,5 +394,17 @@
     "intensivbettenImmunizedRatio": 0.211,
     "immunizedRatio": 0.649,
     "immunizedRatioApproved": 0.732
+  },
+  {
+    "date": "20.10.2021",
+    "hospitalisierung": 2.21,
+    "intensivbettenConfirmed": 130,
+    "intensivbettenSuspicion": 8,
+    "normalbettenConfirmed": 236,
+    "normalbettenSuspicion": 68,
+    "intensivbettenNotImmunizedRatio": 0.783,
+    "intensivbettenImmunizedRatio": 0.202,
+    "immunizedRatio": 0.65,
+    "immunizedRatioApproved": 0.733
   }
 ]
