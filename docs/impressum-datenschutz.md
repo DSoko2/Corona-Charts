@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Impressum & Datenschutz
-description: Impressum und Datenschutzerklärung zu Corona Chart Neu-Isenburg, eine interaktive Übersicht aktueller Daten zur Corona-Pandemie in Neu-Isenburg.
+description: Impressum und Datenschutzerklärung zu Corona Charts, interaktive Übersichten aktueller Daten zur Corona-Pandemie in Hessen und Neu-Isenburg.
 ---
 
 

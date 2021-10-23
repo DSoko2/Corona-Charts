@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
-title: Corona Chart Neu-Isenburg
-description: Interaktive Übersicht aktueller Daten zur Corona-Pandemie in Neu-Isenburg.
+title: Corona Charts
+description: Interaktive Übersicht aktueller Daten zur Corona-Pandemie in Hessen und Neu-Isenburg.
 url: "https://corona.dsoko.de"
 show_downloads: false
 github:

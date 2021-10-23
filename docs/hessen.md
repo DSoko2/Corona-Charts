@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Corona Chart Hessen
-description: Interaktive Übersicht der hessischen Indikatoren zur Bestimmung des Pandemiegeschehens.
+title: Hessen
+description: Interaktive Übersicht der Indikatoren zur Bestimmung des Pandemiegeschehens in Hessen.
 permalink: hessen
 image: /assets/hessen-card.png
 ---
