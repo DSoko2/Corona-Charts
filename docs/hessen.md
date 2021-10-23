@@ -69,8 +69,8 @@ Es sind zwei Eskalationsstufen definiert, deren Erreichung anhand <a href="https
 
 ## Weitere Informationsquellen
 
-* [Tägliche Übersicht über die Indikatoren zur Pandemiebestimmung des Landes Hessen](https://soziales.hessen.de/gesundheit/corona-in-hessen/taegliche-uebersicht-ueber-die-indikatoren-zur-pandemiebestimmung)
-* [Corona-Regeln in Hessen Hessen: Was gilt wo?](https://soziales.hessen.de/sites/default/files/media/hessen.de_land/corona-regeln_in_hessen1609_final2.pdf)
+* [Tägliche Übersicht über die Indikatoren zur Pandemiebestimmung des Landes Hessen](https://soziales.hessen.de/Corona/Bulletin/Tagesaktuelle-Zahlen)
+* [Corona-Regeln in Hessen: Was gilt wo?](https://www.hessen.de/sites/hessen.hessen.de/files/2021-09/corona-regeln_in_hessen1609_final2.pdf)
 
 {% include footer.html %}
 {% include load-c3.html %}
