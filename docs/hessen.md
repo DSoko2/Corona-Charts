@@ -19,9 +19,9 @@ Aktuellste Daten: <span id="current-date"></span>
 	<dt>Hospitalisierungsinzidenz</dt>
 	<dd><span id="current-hospitalisierungsinzidenz"></span> (<span id="day-change-hospitalisierungsinzidenz"></span> Vortag, <span id="week-change-hospitalisierungsinzidenz"></span> Vorwoche)</dd>
 	<dt>Intensivbetten</dt>
-	<dd><span id="current-intensivbetten"></span> (<span id="day-change-intensivbetten"></span> Vortag, <span id="week-change-intensivbetten"></span> Vorwoche)<br />
-        <b>(bestätigt):</b> <span id="current-intensivbetten-confirmed"></span> (<span id="day-change-intensivbetten-confirmed"></span> Vortag, <span id="week-change-intensivbetten-confirmed"></span> Vorwoche)<br />
-        <b>(Verdacht):</b> <span id="current-intensivbetten-suspicion"></span> (<span id="day-change-intensivbetten-suspicion"></span> Vortag, <span id="week-change-intensivbetten-suspicion"></span> Vorwoche)
+	<dd><span id="current-intensivbetten"></span> (<span id="week-change-intensivbetten"></span> Vorwoche)<br />
+        <b>(bestätigt):</b> <span id="current-intensivbetten-confirmed"></span> (<span id="week-change-intensivbetten-confirmed"></span> Vorwoche)<br />
+        <b>(Verdacht):</b> <span id="current-intensivbetten-suspicion"></span> (<span id="week-change-intensivbetten-suspicion"></span> Vorwoche)
     </dd>
 </dl>
 
@@ -33,9 +33,9 @@ Aktuellste Daten: <span id="current-date"></span>
 
 <dl>
 	<dt>Normalbetten</dt>
-	<dd><span id="current-normalbetten"></span> (<span id="day-change-normalbetten"></span> Vortag, <span id="week-change-normalbetten"></span> Vorwoche)<br />
-        <b>(bestätigt):</b> <span id="current-normalbetten-confirmed"></span> (<span id="day-change-normalbetten-confirmed"></span> Vortag, <span id="week-change-normalbetten-confirmed"></span> Vorwoche)<br />
-        <b>(Verdacht):</b> <span id="current-normalbetten-suspicion"></span> (<span id="day-change-normalbetten-suspicion"></span> Vortag, <span id="week-change-normalbetten-suspicion"></span> Vorwoche)
+	<dd><span id="current-normalbetten"></span> (<span id="week-change-normalbetten"></span> Vorwoche)<br />
+        <b>(bestätigt):</b> <span id="current-normalbetten-confirmed"></span> (<span id="week-change-normalbetten-confirmed"></span> Vorwoche)<br />
+        <b>(Verdacht):</b> <span id="current-normalbetten-suspicion"></span> (<span id="week-change-normalbetten-suspicion"></span> Vorwoche)
     </dd>
 </dl>
 
@@ -45,13 +45,13 @@ Aktuellste Daten: <span id="current-date"></span>
 
 <dl>
 	<dt>Geimpft</dt>
-	<dd><span id="current-immunized"></span> (<span id="day-change-immunized"></span> Vortag, <span id="week-change-immunized"></span> Vorwoche)</dd>
+	<dd><span id="current-immunized"></span> ( <span id="week-change-immunized"></span> Vorwoche)</dd>
 	<dt>Geimpft (impffähig)</dt>
-	<dd><span id="current-immunized-approved"></span> (<span id="day-change-immunized-approved"></span> Vortag, <span id="week-change-immunized-approved"></span> Vorwoche)</dd>
+	<dd><span id="current-immunized-approved"></span> (<span id="week-change-immunized-approved"></span> Vorwoche)</dd>
 	<dt>Intensivbetten (geimpft)</dt>
-	<dd><span id="current-intensivbetten-immunized"></span> (<span id="day-change-intensivbetten-immunized"></span> Vortag, <span id="week-change-intensivbetten-immunized"></span> Vorwoche)</dd>
+	<dd><span id="current-intensivbetten-immunized"></span> (<span id="week-change-intensivbetten-immunized"></span> Vorwoche)</dd>
 	<dt>Intensivbetten (ungeimpft)</dt>
-    <dd><span id="current-intensivbetten-not-immunized"></span> (<span id="day-change-intensivbetten-not-immunized"></span> Vortag, <span id="week-change-intensivbetten-not-immunized"></span> Vorwoche)</dd>
+    <dd><span id="current-intensivbetten-not-immunized"></span> (<span id="week-change-intensivbetten-not-immunized"></span> Vorwoche)</dd>
 </dl>
 
 {% include chart.html chartId="weitere-indikatoren-chart-2" %}
@@ -324,7 +324,8 @@ Aktuellste Daten: <span id="current-date"></span>
             const dayEarlier = data.slice(0, -1).filter(x => x).slice(-1)[0];
             const weekEarlier = data.slice(0, -7).filter(x => x).slice(-1)[0];
 			document.getElementById('current-' + field).innerText = format(current);
-			setDataChange(document.getElementById('day-change-' + field), current, dayEarlier, format, invertedPositive);
+            if (field === "hospitalisierungsinzidenz")
+			    setDataChange(document.getElementById('day-change-' + field), current, dayEarlier, format, invertedPositive);
 			setDataChange(document.getElementById('week-change-' + field), current, weekEarlier, format, invertedPositive);
 		}
 		setCurrentData('hospitalisierungsinzidenz', hospitalisierung, t => Number(t).toFixed(2));
