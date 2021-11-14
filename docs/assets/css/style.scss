@@ -30,7 +30,7 @@ dd {
 	margin: 0;
 }
 dd::after {
-    content: '\A\A';
+    content: '\A';
     white-space: pre-line;
 }
 dd:last-of-type::after {

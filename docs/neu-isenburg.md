@@ -6,9 +6,7 @@ permalink: neu-isenburg
 image: /assets/neu-isenburg-card.png
 ---
 
-{% include chart.html chartId="chart" %}
-
-## Aktuell (<span id="current-date"></span>)
+Aktuellste Daten: <span id="current-date"></span>
 
 <dl>
 	<dt>Aktive Fälle</dt>
@@ -20,6 +18,8 @@ image: /assets/neu-isenburg-card.png
 	<dt>7-Tage-Inzidenz Kreis</dt>
 	<dd><span id="current-7-days-incidence-KO"></span> (<span id="day-change-7-days-incidence-KO"></span> Vortag, <span id="week-change-7-days-incidence-KO"></span> Vorwoche)</dd>
 </dl>
+
+{% include chart.html chartId="chart" %}
 
 ## Legende
 
@@ -89,6 +89,9 @@ image: /assets/neu-isenburg-card.png
 	            show: true
 	        }
    		},
+        line: {
+            connectNull: true
+        },
 	    subchart: {
 	        show: true
 	    },
@@ -134,9 +137,9 @@ image: /assets/neu-isenburg-card.png
 			element.classList.add(change <= 0 ? 'better' : 'worse');
 		}
 		function setCurrentData(field, data) {
-            const current = data.slice(-1)[0];
-            const dayEarlier = data.slice(-2)[0];
-            const weekEarlier = data.slice(-8)[0];
+            const current = data.filter(x => x).slice(-1)[0];
+            const dayEarlier = data.slice(0, -1).filter(x => x).slice(-1)[0];
+            const weekEarlier = data.slice(0, -7).filter(x => x).slice(-1)[0];
 			document.getElementById('current-' + field).innerText = current;
 			setDataChange(document.getElementById('day-change-' + field), current, dayEarlier);
 			setDataChange(document.getElementById('week-change-' + field), current, weekEarlier);
