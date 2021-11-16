@@ -77,9 +77,9 @@ Aktuellste Daten: <span id="current-date"></span>
     <dt>Geimpft (impffähig)</dt>
     <dd>Anteil der Personen in Hessen im impffähigen Alter (12+) mit vollständiger Impfung gegen Corona [1].</dd>
 	<dt>Intensivbetten (geimpft)</dt>
-    <dd>Anteil der vollständig geimpften Personen [1].</dd>
+    <dd>Anteil der vollständig Geimpften unter den mit Corona infizierten Personen auf hessischen Intensivstationen [1].</dd>
 	<dt>Intensivbetten (ungeimpft)</dt>
-    <dd>Anteil der ungeimpften und nicht vollständig geimpften Personen [1].</dd>
+    <dd>Anteil der Ungeimpften und nicht vollständig Geimpften unter den mit Corona infizierten Person auf hessischen Intensivstationen [1].</dd>
 </dl>
 
 [1] Entnommen aus dem [täglichen Bulletin des hessischen Ministeriums für Soziales und Integration](https://soziales.hessen.de/gesundheit/corona-in-hessen/taegliche-uebersicht-ueber-die-indikatoren-zur-pandemiebestimmung).
