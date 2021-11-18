@@ -7,7 +7,7 @@ image: /assets/hessen-card.png
 ---
 
 Seit dem 16.09.2021 ersetzen neue Leitindikatoren die 7-Tage-Inzidenz als Grundlage zur Festlegung von Schutzmaßnahmen.
-Es sind zwei Eskalationsstufen definiert, deren Erreichung anhand <a href="https://soziales.hessen.de/gesundheit/corona-in-hessen/hospitalisierungsinzidenz-und-intensivbettenbelegung-ruecken-in-den-mittelpunkt">der landesweiten Hospitalisierungsinzidenz und Intensivbettenbelegung festgestellt wird</a>.
+Es sind zwei Eskalationsstufen definiert, deren Erreichung anhand <a href="https://soziales.hessen.de/Corona/Massnahmen-und-Regeln/Indikatoren-und-Inzidenz">der landesweiten Hospitalisierungsinzidenz und Intensivbettenbelegung festgestellt wird</a>.
 
 Seit 14.11. werden die Daten auf dieser Seite nicht mehr dem Erscheinungsdatum im Bulletin sondern dem Erscheinungdatum in ihrer Primärquelle (RKI, IVENA Sonderlage und RKI Impfquotenmonitoring) zugeordnet.
 
