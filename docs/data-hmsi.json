@@ -830,6 +830,18 @@
   {
     "date": "24.11.2021",
     "hospitalisierung": 4.43,
+    "intensivbettenConfirmed": 248,
+    "intensivbettenSuspicion": 25,
+    "normalbettenConfirmed": 718,
+    "normalbettenSuspicion": 117,
+    "intensivbettenNotImmunizedRatio": 0.576,
+    "intensivbettenImmunizedRatio": 0.37,
+    "immunizedRatio": 0.672,
+    "immunizedRatioApproved": 0.757
+  },
+  {
+    "date": "25.11.2021",
+    "hospitalisierung": 4.59,
     "intensivbettenConfirmed": null,
     "intensivbettenSuspicion": null,
     "normalbettenConfirmed": null,
