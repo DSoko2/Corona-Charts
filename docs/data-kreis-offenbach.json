@@ -2959,5 +2959,26 @@
 		"newCasesNI": 34,
 		"activeCasesKO": 2250,
 		"sevenDaysIncidenceKO": 333.2
+	},
+	{
+		"date": "27.11.2021",
+		"activeCasesNI": 294,
+		"newCasesNI": 25,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": 340.8
+	},
+	{
+		"date": "28.11.2021",
+		"activeCasesNI": 305,
+		"newCasesNI": 23,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": 347.8
+	},
+	{
+		"date": "29.11.2021",
+		"activeCasesNI": 304,
+		"newCasesNI": 9,
+		"activeCasesKO": 2338,
+		"sevenDaysIncidenceKO": 338.5
 	}
 ]
