@@ -3063,14 +3063,14 @@
 		"activeCasesNI": 211,
 		"newCasesNI": 23,
 		"activeCasesKO": null,
-		"sevenDaysIncidenceKO": null
+		"sevenDaysIncidenceKO": 262.2
 	},
 	{
 		"date": "12.12.2021",
 		"activeCasesNI": 197,
 		"newCasesNI": 9,
 		"activeCasesKO": null,
-		"sevenDaysIncidenceKO": null
+		"sevenDaysIncidenceKO": 269.5
 	},
 	{
 		"date": "13.12.2021",
@@ -3099,5 +3099,12 @@
 		"newCasesNI": 15,
 		"activeCasesKO": 1845,
 		"sevenDaysIncidenceKO": 240.4
+	},
+	{
+		"date": "17.12.2021",
+		"activeCasesNI": 179,
+		"newCasesNI": 7,
+		"activeCasesKO": 1829,
+		"sevenDaysIncidenceKO": 224.9
 	}
 ]
