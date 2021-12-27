@@ -3151,29 +3151,29 @@
 	},
 	{
 		"date": "24.12.2021",
-		"activeCasesNI": null,
-		"newCasesNI": null,
+		"activeCasesNI": 173,
+		"newCasesNI": 13,
 		"activeCasesKO": null,
-		"sevenDaysIncidenceKO": null
+		"sevenDaysIncidenceKO": 226.1
 	},
 	{
 		"date": "25.12.2021",
-		"activeCasesNI": null,
-		"newCasesNI": null,
+		"activeCasesNI": 159,
+		"newCasesNI": 9,
 		"activeCasesKO": null,
-		"sevenDaysIncidenceKO": null
+		"sevenDaysIncidenceKO": 216.2
 	},
 	{
 		"date": "26.12.2021",
-		"activeCasesNI": null,
-		"newCasesNI": null,
+		"activeCasesNI": 159,
+		"newCasesNI": 0,
 		"activeCasesKO": null,
-		"sevenDaysIncidenceKO": null
+		"sevenDaysIncidenceKO": 191
 	},
 	{
 		"date": "27.12.2021",
 		"activeCasesNI": 158,
-		"newCasesNI": 35,
+		"newCasesNI": 13,
 		"activeCasesKO": 1494,
 		"sevenDaysIncidenceKO": 192.1
 	}
