@@ -1238,13 +1238,25 @@
   {
     "date": "28.12.2021",
     "hospitalisierung": 2.72,
+    "intensivbettenConfirmed": 296,
+    "intensivbettenSuspicion": 15,
+    "normalbettenConfirmed": 543,
+    "normalbettenSuspicion": 98,
+    "intensivbettenNotImmunizedRatio": 0.672,
+    "intensivbettenImmunizedRatio": 0.288,
+    "immunizedRatio": 0.697,
+    "immunizedRatioApproved": 0.786
+  },
+  {
+    "date": "29.12.2021",
+    "hospitalisierung": 2.8,
     "intensivbettenConfirmed": null,
     "intensivbettenSuspicion": null,
     "normalbettenConfirmed": null,
     "normalbettenSuspicion": null,
     "intensivbettenNotImmunizedRatio": null,
     "intensivbettenImmunizedRatio": null,
-    "immunizedRatio": 0.697,
-    "immunizedRatioApproved": 0.786
+    "immunizedRatio": 0.698,
+    "immunizedRatioApproved": 0.787
   }
 ]
