@@ -3308,14 +3308,14 @@
 		"activeCasesNI": 469,
 		"newCasesNI": 21,
 		"activeCasesKO": null,
-		"sevenDaysIncidenceKO": null
+		"sevenDaysIncidenceKO": 525.9
 	},
 	{
 		"date": "16.01.2022",
 		"activeCasesNI": 492,
 		"newCasesNI": 23,
 		"activeCasesKO": null,
-		"sevenDaysIncidenceKO": null
+		"sevenDaysIncidenceKO": 518.6
 	},
 	{
 		"date": "17.01.2022",
@@ -3330,5 +3330,12 @@
 		"newCasesNI": 102,
 		"activeCasesKO": 3778,
 		"sevenDaysIncidenceKO": 564.0
+	},
+	{
+		"date": "19.01.2022",
+		"activeCasesNI": 569,
+		"newCasesNI": 42,
+		"activeCasesKO": 3905,
+		"sevenDaysIncidenceKO": 637.8
 	}
 ]
