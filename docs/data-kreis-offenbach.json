@@ -3393,5 +3393,12 @@
 		"newCasesNI": 71,
 		"activeCasesKO": 6197,
 		"sevenDaysIncidenceKO": 1023.2
+	},
+	{
+		"date": "28.01.2022",
+		"activeCasesNI": 893,
+		"newCasesNI": 131,
+		"activeCasesKO": 6655,
+		"sevenDaysIncidenceKO": 1092.2
 	}
 ]
