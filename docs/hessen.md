@@ -46,8 +46,12 @@ Aktuellste Daten: <span id="current-date"></span>
 <dl>
 	<dt>Geimpft</dt>
 	<dd><span id="current-immunized"></span> ( <span id="week-change-immunized"></span> Vorwoche)</dd>
+	<dt>Geboostert</dt>
+	<dd><span id="current-boostered"></span> ( <span id="week-change-boostered"></span> Vorwoche)</dd>
 	<dt>Geimpft (impffähig)</dt>
 	<dd><span id="current-immunized-approved"></span> (<span id="week-change-immunized-approved"></span> Vorwoche)</dd>
+	<dt>Geboostert (impffähig)</dt>
+	<dd><span id="current-boostered-approved"></span> (<span id="week-change-boostered-approved"></span> Vorwoche)</dd>
 	<dt>Intensivbetten (geimpft)</dt>
 	<dd><span id="current-intensivbetten-immunized"></span> (<span id="week-change-intensivbetten-immunized"></span> Vorwoche)</dd>
 	<dt>Intensivbetten (ungeimpft)</dt>
@@ -239,8 +243,10 @@ Aktuellste Daten: <span id="current-date"></span>
 	    	columns: [],
 		    colors: {
 		    	// https://learnui.design/tools/data-color-picker.html#palette
-		    	'Geimpft': '#bc5090',
-		    	'Geimpft (impffähig)': '#003f5c',
+		    	'Geimpft': '#dca0c0',
+		    	'Geimpft (impffähig)': '#809fac',
+		    	'Geboostert': '#bc5090',
+		    	'Geboostert (impffähig)': '#003f5c',
 		    	'Intensivbetten (geimpft)': '#ffa600',
 		    	'Intensivbetten (ungeimpft)': '#FDA',
 			},
@@ -308,7 +314,9 @@ Aktuellste Daten: <span id="current-date"></span>
         const intensivbettenNotImmunizedRatio = ['Intensivbetten (ungeimpft)'].concat(data.map(v => v['intensivbettenNotImmunizedRatio']));
         const intensivbettenImmunizedRatio = ['Intensivbetten (geimpft)'].concat(data.map(v => v['intensivbettenImmunizedRatio']));
         const immunizedRatio = ['Geimpft'].concat(data.map(v => v['immunizedRatio']));
+        const boosteredRatio = ['Geboostert'].concat(data.map(v => v['boosteredRatio'] || null));
         const immunizedRatioApproved = ['Geimpft (impffähig)'].concat(data.map(v => v['immunizedRatioApproved']));
+        const boosteredRatioApproved = ['Geboostert (impffähig)'].concat(data.map(v => v['boosteredRatioApproved'] || null));
 
 		// Print current data
 		const currentExploded = date.slice(-1)[0].split('.')
@@ -338,7 +346,9 @@ Aktuellste Daten: <span id="current-date"></span>
 		setCurrentData('normalbetten-confirmed', normalbettenConfirmed, t => Math.round(t));
 		setCurrentData('normalbetten-suspicion', normalbettenSuspicion, t => Math.round(t));
 		setCurrentData('immunized', immunizedRatio, t => Number(t * 100).toFixed(1) + '%', false);
+		setCurrentData('boostered', boosteredRatio, t => Number(t * 100).toFixed(1) + '%', false);
 		setCurrentData('immunized-approved', immunizedRatioApproved, t => Number(t * 100).toFixed(1) + '%', false);
+		setCurrentData('boostered-approved', boosteredRatioApproved, t => Number(t * 100).toFixed(1) + '%', false);
 
 		// Draw charts
 		leitindikatorenChart.load({
@@ -348,7 +358,7 @@ Aktuellste Daten: <span id="current-date"></span>
 			columns: [date, normalbetten, normalbettenConfirmed, normalbettenSuspicion]
 		});
 		weitereIndikatorenChart2.load({
-			columns: [date, immunizedRatio, immunizedRatioApproved, intensivbettenImmunizedRatio, intensivbettenNotImmunizedRatio]
+			columns: [date, immunizedRatio, immunizedRatioApproved, boosteredRatio, boosteredRatioApproved, intensivbettenImmunizedRatio, intensivbettenNotImmunizedRatio]
 		});
 
         {
