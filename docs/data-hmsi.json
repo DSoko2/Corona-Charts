@@ -1952,6 +1952,20 @@
   {
     "date": "22.02.2022",
     "hospitalisierung": 6.2,
+    "intensivbettenConfirmed": 211,
+    "intensivbettenSuspicion": 13,
+    "normalbettenConfirmed": 1191,
+    "normalbettenSuspicion": 125,
+    "intensivbettenNotImmunizedRatio": 0.559,
+    "intensivbettenImmunizedRatio": 0.384,
+    "immunizedRatio": 0.738,
+    "boosteredRatio": 0.541,
+    "immunizedRatioApproved": 0.821,
+    "boosteredRatioApproved": 0.609
+  },
+  {
+    "date": "23.02.2022",
+    "hospitalisierung": 6.15,
     "intensivbettenConfirmed": null,
     "intensivbettenSuspicion": null,
     "normalbettenConfirmed": null,
