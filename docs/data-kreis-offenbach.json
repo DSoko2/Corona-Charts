@@ -3589,5 +3589,40 @@
 		"newCasesNI": 48,
 		"activeCasesKO": 9701,
 		"sevenDaysIncidenceKO": 991.7
+	},
+	{
+		"date": "25.02.2022",
+		"activeCasesNI": 832,
+		"newCasesNI": 37,
+		"activeCasesKO": 8547,
+		"sevenDaysIncidenceKO": 971.8
+	},
+	{
+		"date": "26.02.2022",
+		"activeCasesNI": 739,
+		"newCasesNI": 38,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": 809.4
+	},
+	{
+		"date": "27.02.2022",
+		"activeCasesNI": 684,
+		"newCasesNI": 10,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": 895.0
+	},
+	{
+		"date": "28.02.2022",
+		"activeCasesNI": 670,
+		"newCasesNI": 29,
+		"activeCasesKO": 7366,
+		"sevenDaysIncidenceKO": 898.4
+	},
+	{
+		"date": "01.03.2022",
+		"activeCasesNI": 654,
+		"newCasesNI": 18,
+		"activeCasesKO": 7249,
+		"sevenDaysIncidenceKO": 885.7
 	}
 ]
