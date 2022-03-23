@@ -2344,15 +2344,29 @@
   {
     "date": "22.03.2022",
     "hospitalisierung": 6.36,
+    "intensivbettenConfirmed": 155,
+    "intensivbettenSuspicion": 9,
+    "normalbettenConfirmed": 1253,
+    "normalbettenSuspicion": 145,
+    "intensivbettenNotImmunizedRatio": 0.391,
+    "intensivbettenImmunizedRatio": 0.558,
+    "immunizedRatio": null,
+    "boosteredRatio": null,
+    "immunizedRatioApproved": null,
+    "boosteredRatioApproved": null
+  },
+  {
+    "date": "23.03.2022",
+    "hospitalisierung": 6.58,
     "intensivbettenConfirmed": null,
     "intensivbettenSuspicion": null,
     "normalbettenConfirmed": null,
     "normalbettenSuspicion": null,
     "intensivbettenNotImmunizedRatio": null,
     "intensivbettenImmunizedRatio": null,
-    "immunizedRatio": null,
-    "boosteredRatio": null,
-    "immunizedRatioApproved": null,
-    "boosteredRatioApproved": null
+    "immunizedRatio": 0.744,
+    "boosteredRatio": 0.559,
+    "immunizedRatioApproved": 0.825,
+    "boosteredRatioApproved": 0.630
   }
 ]
