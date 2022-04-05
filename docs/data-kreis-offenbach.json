@@ -3862,5 +3862,12 @@
 		"newCasesNI": 0,
 		"activeCasesKO": null,
 		"sevenDaysIncidenceKO": 1550.4
+	},
+	{
+		"date": "05.04.2022",
+		"activeCasesNI": null,
+		"newCasesNI": 72,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": 1558.3
 	}
 ]
