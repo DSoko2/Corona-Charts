@@ -3932,5 +3932,47 @@
 		"newCasesNI": 35,
 		"activeCasesKO": null,
 		"sevenDaysIncidenceKO": 941.8
+	},
+	{
+		"date": "15.04.2022",
+		"activeCasesNI": null,
+		"newCasesNI": 25,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": 936.5
+	},
+	{
+		"date": "16.04.2022",
+		"activeCasesNI": null,
+		"newCasesNI": 0,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": 786.7
+	},
+	{
+		"date": "17.04.2022",
+		"activeCasesNI": null,
+		"newCasesNI": 25,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": 891.6
+	},
+	{
+		"date": "18.04.2022",
+		"activeCasesNI": null,
+		"newCasesNI": 0,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": 891.1
+	},
+	{
+		"date": "19.04.2022",
+		"activeCasesNI": null,
+		"newCasesNI": 0,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": 655.7
+	},
+	{
+		"date": "20.04.2022",
+		"activeCasesNI": null,
+		"newCasesNI": 77,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": 769.6
 	}
 ]
