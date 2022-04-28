@@ -6,9 +6,6 @@ permalink: hessen
 image: /assets/hessen-card.png
 ---
 
-Seit dem 16.09.2021 ersetzen neue Leitindikatoren die 7-Tage-Inzidenz als Grundlage zur Festlegung von Schutzmaßnahmen.
-Es sind zwei Eskalationsstufen definiert, deren Erreichung anhand <a href="https://soziales.hessen.de/Corona/Massnahmen-und-Regeln/Indikatoren-und-Inzidenz">der landesweiten Hospitalisierungsinzidenz und Intensivbettenbelegung festgestellt wird</a>.
-
 Seit 14.11. werden die Daten auf dieser Seite nicht mehr dem Erscheinungsdatum im Bulletin sondern dem Erscheinungdatum in ihrer Primärquelle (RKI, IVENA Sonderlage und RKI Impfquotenmonitoring) zugeordnet.
 
 Aktuellste Daten: <span id="current-date"></span>
@@ -91,7 +88,7 @@ Aktuellste Daten: <span id="current-date"></span>
 ## Weitere Informationsquellen
 
 * [Tägliche Übersicht über die Indikatoren zur Pandemiebestimmung des Landes Hessen](https://soziales.hessen.de/Corona/Bulletin/Tagesaktuelle-Zahlen)
-* [Corona-Regeln in Hessen: Was gilt wo?](https://www.hessen.de/sites/hessen.hessen.de/files/2021-09/corona-regeln_in_hessen1609_final2.pdf)
+* [Corona-Regeln in Hessen](https://www.hessen.de/Handeln/Corona-in-Hessen)
 
 {% include footer.html %}
 {% include load-c3.html %}
@@ -150,7 +147,7 @@ Aktuellste Daten: <span id="current-date"></span>
 	            show: true
 	        }
    		},
-        grid: {
+        /*grid: {
             y: {
                 lines: [
                     {value: 8, text: 'Stufe 1', axis: 'y', position: 'start'},
@@ -159,7 +156,7 @@ Aktuellste Daten: <span id="current-date"></span>
                     {value: 400, text: 'Stufe 2', axis: 'y2', position: 'end'},
                 ]
             }
-        },
+        },*/
         line: {
             connectNull: true
         },

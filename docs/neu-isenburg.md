@@ -25,7 +25,7 @@ Aktuellste Daten: <span id="current-date"></span>
 
 <dl>
 	<dt>Aktive Fälle</dt>
-	<dd>Positiv getestete Personen der letzten 14 Tage in Neu-Isenburg [1]. Vor dem 18.11. Anzahl der aktuell positiv Getesteten in Neu-Isenburg.</dd>
+	<dd>Positiv getestete Personen der letzten 14 Tage in Neu-Isenburg [1]. Vor dem 18.11.2020 Anzahl der aktuell positiv Getesteten in Neu-Isenburg.</dd>
 	<dt>Neue Fälle</dt>
 	<dd>Neu positiv getestete Personen in Neu-Isenburg [1].</dd>
 	<dt>7-Tage-Inzidenz</dt>
