@@ -83,7 +83,7 @@ Aktuellste Daten: <span id="current-date"></span>
     <dd>Anteil der Ungeimpften und nicht vollständig Geimpften unter den mit Corona infizierten Person auf hessischen Intensivstationen [1].</dd>
 </dl>
 
-[1] Entnommen aus dem [täglichen Bulletin des hessischen Ministeriums für Soziales und Integration](https://soziales.hessen.de/gesundheit/corona-in-hessen/taegliche-uebersicht-ueber-die-indikatoren-zur-pandemiebestimmung).
+[1] Entnommen aus dem [täglichen Bulletin des hessischen Ministeriums für Soziales und Integration](https://soziales.hessen.de/Corona/Bulletin/Archiv).
 
 ## Weitere Informationsquellen
 
