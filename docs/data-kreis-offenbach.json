@@ -4030,5 +4030,61 @@
 		"newCasesNI": 48,
 		"activeCasesKO": null,
 		"sevenDaysIncidenceKO": 830.5
+	},
+	{
+		"date": "29.04.2022",
+		"activeCasesNI": null,
+		"newCasesNI": 17,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": 752.8
+	},
+	{
+		"date": "30.04.2022",
+		"activeCasesNI": null,
+		"newCasesNI": 31,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": 759.8
+	},
+	{
+		"date": "01.05.2022",
+		"activeCasesNI": null,
+		"newCasesNI": 18,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": 691.4
+	},
+	{
+		"date": "02.05.2022",
+		"activeCasesNI": null,
+		"newCasesNI": 0,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": 691.4
+	},
+	{
+		"date": "03.05.2022",
+		"activeCasesNI": null,
+		"newCasesNI": 18,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": 674.5
+	},
+	{
+		"date": "04.05.2022",
+		"activeCasesNI": null,
+		"newCasesNI": 30,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": 630.5
+	},
+	{
+		"date": "05.05.2022",
+		"activeCasesNI": null,
+		"newCasesNI": 31,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": 593.2
+	},
+	{
+		"date": "06.05.2022",
+		"activeCasesNI": null,
+		"newCasesNI": 20,
+		"activeCasesKO": null,
+		"sevenDaysIncidenceKO": 575.8
 	}
 ]
