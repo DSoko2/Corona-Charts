@@ -6,6 +6,9 @@ permalink: neu-isenburg
 image: /assets/neu-isenburg-card.png
 ---
 
+Mit dem 13. Mai 2022 hat der Kreis Offenbach die Tagesmeldungen, aus denen die Daten dieser Seite stammen, eingestellt (siehe [Pressemitteilung](https://www.kreis-offenbach.de/Themen/Gesundheit-Verbraucher-schutz/akut/Corona/Corona-Entwicklung/index.php?La=1&object=tx,2896.12105.1&kuo=2&sub=0)).
+Entsprechend wird diese Darstellung bis auf Weiteres nicht mehr aktualisiert.
+
 Aktuellste Daten: <span id="current-date"></span>
 
 <dl>
