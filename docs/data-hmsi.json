@@ -4202,5 +4202,19 @@
     "boosteredRatio": 0.603,
     "immunizedRatioApproved": 0.842,
     "boosteredRatioApproved": 0.705
+  },
+  { 
+    "date": "02.08.2022",
+    "hospitalisierung": 6.04,
+    "intensivbettenConfirmed": 159,
+    "intensivbettenSuspicion": 11,
+    "normalbettenConfirmed": 1380,
+    "normalbettenSuspicion": 145,
+    "intensivbettenNotImmunizedRatio": null,
+    "intensivbettenImmunizedRatio": null,
+    "immunizedRatio": 0.752,
+    "boosteredRatio": 0.603,
+    "immunizedRatioApproved": 0.842,
+    "boosteredRatioApproved": 0.705
   }
 ]
